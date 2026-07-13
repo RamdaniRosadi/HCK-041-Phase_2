@@ -17,7 +17,7 @@ page = st.sidebar.selectbox("Halaman:", ("Exploratory Data Analysis (EDA)", "Mod
 
 st.sidebar.markdown("---")
 st.sidebar.write("Graded Challenge 7")
-st.sidebar.write("Dibuat oleh: [Nama Anda]")
+st.sidebar.write("Dibuat oleh: Mohammad Ramdani Rosadi")
 
 # Logika perpindahan halaman
 if page == "Exploratory Data Analysis (EDA)":
