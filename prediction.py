@@ -6,7 +6,7 @@ from PIL import Image
 # Cache model agar tidak diload berulang-ulang
 @st.cache_resource
 def load_model():
-    # Pastikan file best_fire_model.h5 ada di folder deployment yang sama
+    # Pastikan file best_fire_model.h5
     return tf.keras.models.load_model('best_fire_model.h5')
 
 def run():
@@ -25,7 +25,7 @@ def run():
         
         st.write("Menganalisis gambar...")
         
-        # Preprocessing gambar (Harus persis sama dengan training)
+        # Preprocessing gambar 
         img = image.convert('RGB')
         img = img.resize((224, 224))
         
@@ -37,7 +37,7 @@ def run():
         prediction = model.predict(img_batch)
         probabilitas = prediction[0][0]
         
-        # Konversi ke label string (Sesuaikan logika ini dengan class_indices Anda saat training)
+        # Konversi ke label string
         if probabilitas > 0.5:
             hasil_label = "Non-Fire 🌲"
             kepercayaan = probabilitas * 100
