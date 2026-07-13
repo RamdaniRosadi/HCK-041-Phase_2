@@ -22,7 +22,7 @@ def run():
     ax.set_ylabel('Jumlah Gambar')
     st.pyplot(fig)
     
-    st.write("**Insight:** Dataset cenderung imbalanced / balanced (jelaskan sesuai hasil grafik Anda).")
+    st.write("**Insight:** Dataset cenderung imbalanced Dataset cenderung imbalanced karena terdapat gambar fire yang lebih dominan daripada non-fire yang berguna untuk mendeteksi api.")
     
     st.markdown("---")
     
